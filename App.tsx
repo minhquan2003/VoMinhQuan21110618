@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-function StopWatch(): React.JSX.Element {
+function App(): React.JSX.Element {
     const [time, setTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
     const [laps, setLaps] = useState<number[]>([]);
@@ -121,4 +121,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default StopWatch;
+export default App;
